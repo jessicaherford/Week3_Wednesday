@@ -3,12 +3,7 @@
 ##Review
 [Monday's Material](https://github.com/calebatwood/Week3_Monday)
 <br>
-- Loop structure
-- For Loop
-- While Loop
-- Do While Loop
+- More Functions
 
 ##In Class Exercise
-- Looping through code
-
-##Homework
+More functions !!!!
