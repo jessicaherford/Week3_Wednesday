@@ -1,6 +1,7 @@
 // More Function Exercises!
 
 // 1. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
+console.log('Question 1');
 // 2. Use a function to ask a user for a temperature in Celsius and converts it to Fahrenheit.
 
 // 3. Adding to the code in #3, prompt the user a second time to determine whether they'd like to convert from Fahrenheit to Celsius
