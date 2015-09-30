@@ -14,6 +14,21 @@
 //    too high or too low. This continues until the correct guess is entered.
 //    When the correct guess is entered the user is given a success message with the correct number.
 
+// 5. Without using Math.min(), write a function called minimum() that takes two numbers
+//    and outputs the smallest one to the console.
 
-//  . http://games.usvsth3m.com/javascript-under-pressure/
+// 6. Create a new function called minimum3() to find the smallest of three numbers
+
+
+// 7. Write a function countBs() that takes a string as its only argument and returns
+//    a number that indicates how many uppercase “B” characters are in the string.
+//    HINT: Google charAt()
+
+
+// 8. Write a function called countChars() that behaves like countBs(), except it takes a
+//    second argument that indicates what character is to be counted.
+
+
+
+//    http://games.usvsth3m.com/javascript-under-pressure/
 //    Have fun with these! Get as far as you can and record your progress and time. We'll try this again in a few weeks!
