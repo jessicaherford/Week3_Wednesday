@@ -17,14 +17,25 @@
 // 2. Create a new function called minimum3() to find the smallest of three numbers
 console.log('Question 2');
   function minimum3 (num1, num2, num3){
-    if (num1 > num2 && num2 < num3){
-      console.log(num2)
+    if (num1 < num2 && num1 < num3){
+      console.log(num1);
     }
-    else if ( num2 > num1 && num3 <
+    else if ( num2 < num1 && num2 < num3){
+      console.log(num2);
+    }
+    else {
+      console.log(num3);
+    }
   }
+
+minimum(23, 45, 46);
+minimum(55, 66, 21);
+
 
 // 3. Declare a function called sum() that takes an array of numbers as an argument adds them.
 //    i.e. sum([1, 2, 3, 4]) should return 10.
+console.log('Question 3');
+
 
 // 4. Declare a function called multiply() that takes an array of numbers and multiplies them together.
 //    i.e. multiply([1, 2, 3, 4]) should return 24.
