@@ -35,11 +35,30 @@ minimum(55, 66, 21);
 // 3. Declare a function called sum() that takes an array of numbers as an argument adds them.
 //    i.e. sum([1, 2, 3, 4]) should return 10.
 console.log('Question 3');
-
-
+var total = 0;
+function sum(array){
+    for(i=0;i<array.length;i++){
+    total += array[i];
+    }
+    return total;
+}
+var array1 = [1, 2, 3, 4, 5];
+sum(array1);
 // 4. Declare a function called multiply() that takes an array of numbers and multiplies them together.
 //    i.e. multiply([1, 2, 3, 4]) should return 24.
+console.log('Question 4');
+var total = 0;
+function multiply(array){
+  for(i = 0; i<array.length; i++){
+    console.log(array[i]);
+    total += array[i] * array[i];
+    console.log(total);
+  }
+return total;
+}
 
+var array2 = [1,2,3,4];
+multiply(array2);
 // 5. Write a function called filterSixPlus() that takes the following array and returns words
 //    that are six characters or longer.
       var words = ["window", "table", "barstool", "glass", "charger", "outlet"];
