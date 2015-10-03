@@ -106,23 +106,63 @@ temperatureConversion();
 //    a number that indicates how many uppercase “B” characters are in the string.
 //    HINT: Google charAt()
 console.log('Question 8');
-function countBs(string){
-    
 
+function countBs(string){
+  var count = [];
+      for(i=0; i < string.length; i++){
+         if(string.charAt(i) === 'B'){
+           count.push(string.charAt(i));
+         }
+      }
+      console.log(count.length);
 }
+
+var string1 = 'Blueberries are Bright and Blue!';
+
+countBs(string1);
+
+var string2 = 'Bonnie always Bought her Bunnies Biannually from Bob\'s Bunnies'
+
+countBs(string2);
 // 9. Write a function called countChars() that behaves like countBs(), except it takes a
 //    second argument that indicates what character is to be counted.
 console.log('Question 9');
 
-function countChars(){}
-// 10. Declare a function called ohZero() that replaces all of the o's in a string with 0's.
-      var string = "Soon you will master functions!";
+// countedVar is able to be changed!
 
+function countChars(string, countedVar){
+  var count = [];
+      for(i=0; i < string.length; i++){
+         if(string.charAt(i) === countedVar){
+           count.push(string.charAt(i));
+         }
+      }
+      console.log(count.length);
+
+}
+
+var string1 = 'The Clever Counting Continues!';
+
+countChars(string1, 'C');
+
+// 10. Declare a function called ohZero() that replaces all of the o's in a string with 0's.
+var string = "Soon you will master functions!";
+
+function ohZero(string0){
+for(i = 0; i < string0.length; i++ ){
+var oString = string0.replace('o', '0');
+}
+console.log(oString);
+}
+
+ohZero(string);
 // 11. Write function that translates a sentence into pig latin.
 //     https://en.wikipedia.org/wiki/Pig_Latin
 //     i.e. "look at my cool function" --> "ooklay atyay ymay oolcay unctionfay"
 
+
 // 12. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
+
 
 // 13. Create a 'Guessing Game'. The game starts by picking a random number.
 //    It then prompts the user to guess the number. If the user's number is lower/higher,
