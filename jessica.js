@@ -49,34 +49,72 @@ sum(array1);
 console.log('Question 4');
 var total = 0;
 function multiply(array){
-  for(i = 0; i<array.length; i++){
-    console.log(array[i]);
-    total += array[i] * array[i];
-    console.log(total);
-  }
-return total;
+  for(i=0;i<array.length; i++){
+    console.log[i];
+  total *= array[i];
+  //console.log(total);
 }
+  return total;
+  }
 
-var array2 = [1,2,3,4];
+
+var array2 = [1, 2, 3, 4];
 multiply(array2);
+
 // 5. Write a function called filterSixPlus() that takes the following array and returns words
 //    that are six characters or longer.
       var words = ["window", "table", "barstool", "glass", "charger", "outlet"];
+console.log('Question 5');
+
+filterSixPlus(words);
+
+function filterSixPlus(array){
+  for(i=0; i<array.length; i++){
+      if(array[i].length >= 6){
+          console.log(array[i]);
+      }
+      else{}
+  }
+}
 
 // 6. Use a function to ask a user for a temperature in Celsius and converts it to Fahrenheit.
+console.log('Question 6');
+function temperatureConversion(userAnswer){
+  userAnswer = prompt('Plese enter a temperature.');
+  var answerFahrenheit = userAnswer * 9/5 + 32
+  return answerFahrenheit;
+}
+temperatureConversion();
+
 
 // 7. Adding to the code in #2, prompt the user a second time to determine whether they'd like to convert from Fahrenheit to Celsius
 //    or from Celsius to Fahrenheit. To keep it simple, instruct them to use "F to C" or "C to F".
 //    Alert them with an error if they do not follow the rules.
+console.log('Question 7');
+function temperatureConversion(userAnswer){
+  userAnswer = prompt('Please enter a temperature.');
+  var answerFahrenheit = userAnswer * 9/5 + 32
+  return answerFahrenheit;
+  userAnswer2 = prompt('Would you like to convert fahrenheit to celsius, type "F to C", if you want to covert celsius to fahrenheit, type "C to F".')
+  if(userAnswer2 = "F to C"){
 
+  }
+}
+
+temperatureConversion();
 // 8. Write a function countBs() that takes a string as its only argument and returns
 //    a number that indicates how many uppercase “B” characters are in the string.
 //    HINT: Google charAt()
+console.log('Question 8');
+function countBs(string){
+    
 
-
+}
 // 9. Write a function called countChars() that behaves like countBs(), except it takes a
 //    second argument that indicates what character is to be counted.
+console.log('Question 9');
 
+function countChars(){}
 // 10. Declare a function called ohZero() that replaces all of the o's in a string with 0's.
       var string = "Soon you will master functions!";
 
