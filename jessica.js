@@ -144,13 +144,14 @@ function countChars(string, countedVar){
 var string1 = 'The Clever Counting Continues!';
 
 countChars(string1, 'C');
+countChars(string1, 'e');
 
 // 10. Declare a function called ohZero() that replaces all of the o's in a string with 0's.
 var string = "Soon you will master functions!";
 
 function ohZero(string0){
 for(i = 0; i < string0.length; i++ ){
-var oString = string0.replace('o', '0');
+var oString = string0.replace(/o/g, '0');
 }
 console.log(oString);
 }
@@ -159,6 +160,18 @@ ohZero(string);
 // 11. Write function that translates a sentence into pig latin.
 //     https://en.wikipedia.org/wiki/Pig_Latin
 //     i.e. "look at my cool function" --> "ooklay atyay ymay oolcay unctionfay"
+console.log('Question 11');
+function pigLatin(string){
+  for( i= 0; i<string.length; i++){
+    string.split();
+    if(i = a,e,i,o,u){
+      var vowelString = string.replace();
+    }
+    else {
+      var consonant = string.replace();
+    }
+  }
+}
 
 
 // 12. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
