@@ -47,12 +47,10 @@ sum(array1);
 // 4. Declare a function called multiply() that takes an array of numbers and multiplies them together.
 //    i.e. multiply([1, 2, 3, 4]) should return 24.
 console.log('Question 4');
-var total = 0;
+var total = 1;
 function multiply(array){
   for(i=0;i<array.length; i++){
-    console.log[i];
   total *= array[i];
-  //console.log(total);
 }
   return total;
   }
@@ -60,6 +58,8 @@ function multiply(array){
 
 var array2 = [1, 2, 3, 4];
 multiply(array2);
+
+var array3 = [2,3,4,5];
 
 // 5. Write a function called filterSixPlus() that takes the following array and returns words
 //    that are six characters or longer.
@@ -93,10 +93,17 @@ temperatureConversion();
 console.log('Question 7');
 function temperatureConversion(userAnswer){
   userAnswer = prompt('Please enter a temperature.');
-  var answerFahrenheit = userAnswer * 9/5 + 32
-  return answerFahrenheit;
-  userAnswer2 = prompt('Would you like to convert fahrenheit to celsius, type "F to C", if you want to covert celsius to fahrenheit, type "C to F".')
+  userAnswer2 = prompt('Would you like to convert fahrenheit to celsius, type "F to C", if you want to covert celsius to fahrenheit, type "C to F".');
+
+(°F - 32) x 5/9 = °C
   if(userAnswer2 = "F to C"){
+    var answerCelsius = (userAnswer - 32) * 5/9;
+    return answerCelsius;
+
+  }
+  else{
+    var answerFahrenheit = userAnswer * 9/5 + 32;
+    return answerFahrenheit;
 
   }
 }
@@ -127,9 +134,6 @@ countBs(string2);
 // 9. Write a function called countChars() that behaves like countBs(), except it takes a
 //    second argument that indicates what character is to be counted.
 console.log('Question 9');
-
-// countedVar is able to be changed!
-
 function countChars(string, countedVar){
   var count = [];
       for(i=0; i < string.length; i++){
@@ -163,26 +167,67 @@ ohZero(string);
 console.log('Question 11');
 function pigLatin(string){
   for( i= 0; i<string.length; i++){
-    string.split();
-    if(i = a,e,i,o,u){
-      var vowelString = string.replace();
+    console.log[i];
+    if(string[0] === 'a' || 'e' || 'i' || 'o' || 'u'){
+      var vowelString = string[i] + 'yay';
+      console.log(vowelString);
     }
     else {
-      var consonant = string.replace();
+      return string.substring(i, word.length) + (word.substring(0,word.length)) + 'ay';
     }
   }
 }
 
+var pigString = 'Look at my cool function.';
+
+
+pigLatin(pigString);
+
+
 
 // 12. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
+console.log('Question 12');
+var currentBottles = 99;
 
+function bottlesOfBeerSong(string){
+    while(currentBottles > 0 ){
+      var songString = currentBottles + ' bottles of beer on the wall ' + currentBottles + ' bottles of beer.  Take one down, pass it around ' + (currentBottles - 1) + ' bottles of beer on the wall!';
+      console.log(songString);
 
+    currentBottles--;
+  }
+    if (currentBottles === 0){
+        console.log('No more bottles of beer on the wall, no more bottles of beer, everyones drunk, and blowing chunks, thanks to the bottles of the beer on the wall! ')
+    }
+}
+bottlesOfBeerSong(songString);
 // 13. Create a 'Guessing Game'. The game starts by picking a random number.
 //    It then prompts the user to guess the number. If the user's number is lower/higher,
 //    it will prompt the user to enter another guess and tell the user if the guess was
 //    too high or too low. This continues until the correct guess is entered.
 //    When the correct guess is entered the user is given a success message with the correct number.
+console.log('Question 13');
 
+var userGuess = prompt('Guess what the number is between 1 and 10.');
 
-// 14. http://games.usvsth3m.com/javascript-under-pressure/
+var number = Math.floor((Math.random()* 10 + 1));
+number = number.toString();
+
+function guessingGame(userGuess){
+    if (userGuess === number){
+    alert('You guessed it, nice work!');
+  }
+  else if(userGuess > number){
+    userGuess = prompt('Too high, guess again!');
+    guessingGame(userGuess);
+  }
+  else{ userGuess =  prompt('Too low, guess again!');
+        guessingGame(userGuess);
+}
+
+}
+
+guessingGame();
+
+//14. http://games.usvsth3m.com/javascript-under-pressure/
 //     Have fun with these! Get as far as you can and record your progress and time. We'll try this again in a few weeks!
