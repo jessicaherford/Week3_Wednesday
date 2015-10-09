@@ -165,6 +165,7 @@ ohZero(string);
 //     https://en.wikipedia.org/wiki/Pig_Latin
 //     i.e. "look at my cool function" --> "ooklay atyay ymay oolcay unctionfay"
 console.log('Question 11');
+// find the shortest way to code this one
 function pigLatin(string){
   for( i= 0; i<string.length; i++){
     console.log[i];
@@ -182,7 +183,25 @@ var pigString = 'Look at my cool function.';
 
 
 pigLatin(pigString);
+function pigLatinWord(word){
+  if(word.match(/^[aeiouAEIOU]/)){
+    return word + "yay";
+  } else if(word.match(/^[yY]/)){
+    return word.substring(1, word.length) + "yay";
+  } else {
+    return word.substring(1, word.length) + word.substring(0, 1) + "ay";
+  }
+}
 
+function pigLatinSentence(sentence){
+  var phrase = "";
+  var words = sentence.split(" ");
+  for(i=0;i<words.length;i++){
+    phrase += pigLatinWord(words[i]) + " ";
+  }
+  return phrase;
+}
+console.log(pigLatinSentence("look at my cool function"));
 
 
 // 12. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
